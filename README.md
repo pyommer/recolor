@@ -5,7 +5,8 @@ Files:
     - recolor.cpp   - the source code file of the recolor program
     - recolor.pdf   - the project writeup describing the recolor project
     - recolor.html  - HTML file breifly describing the project with examples
-    - test.png      - a test image to use with recolor
+    - test.jpg      - a test image to use with recolor
+    - Makefile      - the makefile to use to build the recolor project
     - README.md     - this readme file for the recolor project
 
 # Description:
