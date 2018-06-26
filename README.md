@@ -1,6 +1,5 @@
     Program: recolor.cpp
     Author:  Phillip Yommer
-    Email:   pyommer@g.clemson.edu
     Course:  CPSC 4040
     Title:   Computer Graphics Images
     Problem: Final Programming Project
