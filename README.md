@@ -1,3 +1,15 @@
+# recolor
+
+Files:
+
+    - recolor.cpp   - the source code file of the recolor program
+    - recolor.pdf   - the project writeup describing the recolor project
+    - recolor.html  - HTML file breifly describing the project with examples
+    - test.png      - a test image to use with recolor
+    - README.md     - this readme file for the recolor project
+
+# Description:
+
     Program: recolor.cpp
     Author:  Phillip Yommer
     Course:  CPSC 4040
@@ -14,8 +26,11 @@ Purpose:
 	of an image to the visible colors for the deficiency, creating an
 	output image clearly visible in detail to a viewer with the
 	selected color deficiency.
-	
-	
+
+Compile:
+
+
+
 Usage:
 
     make recolor ; ./recolor <input.img> [<output.img>] [-OPTIONS]
