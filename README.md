@@ -3,6 +3,7 @@
 Files:
 
     - recolor.cpp   - the source code file of the recolor program
+    - recolor.h     - the library file with constants and functions for recolor
     - recolor.pdf   - the project writeup describing the recolor project
     - recolor.html  - HTML file breifly describing the project with examples
     - test.jpg      - a test image to use with recolor
