@@ -6,6 +6,7 @@ Files:
     - recolor.pdf   - the project writeup describing the recolor project
     - recolor.html  - HTML file breifly describing the project with examples
     - test.jpg      - a test image to use with recolor
+                    - https://cdn-images-1.medium.com/max/1280/1*c4y7KbWvyQFSz9u41ephVw.jpeg
     - Makefile      - the makefile to use to build the recolor project
     - README.md     - this readme file for the recolor project
 
