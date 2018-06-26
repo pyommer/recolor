@@ -16,7 +16,11 @@ Purpose:
 	selected color deficiency.
 	
 	
-Usage:      make recolor ; ./recolor <input.img> [<output.img>] [-OPTIONS]
+Usage:
+
+    make recolor ; ./recolor <input.img> [<output.img>] [-OPTIONS]
+
+Arguments:
 
     "input.img"  - the required filename of the input image to be recolored.
     "output.img" - the optional filename to write the recolored output image to.
