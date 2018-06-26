@@ -1,14 +1,11 @@
-/**
- * Program: recolor.cpp
- * Author:  Phillip Yommer
- * Email:   pyommer@g.clemson.edu
- * Course:  CPSC 4040
- * Title:   Computer Graphics Images
- * Problem: Final Programming Project
- * Title:   Recoloring Images for Vision Deficient Viewers
- * Date:    12/04/2017
- *
- */
+    Program: recolor.cpp
+    Author:  Phillip Yommer
+    Email:   pyommer@g.clemson.edu
+    Course:  CPSC 4040
+    Title:   Computer Graphics Images
+    Problem: Final Programming Project
+    Title:   Recoloring Images for Vision Deficient Viewers
+    Date:    12/04/2017
 
 Purpose:	
 
