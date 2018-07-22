@@ -16,14 +16,14 @@ OBJS = recolor.o
 
 #this generically compiles each .cpp to a .o file
 %.o: %.cpp
-    ${CC} -c ${CFLAGS} $<
+	${CC} -c ${CFLAGS} $<
 
 #this does the linking step
 all: recolor
 
 recolor: recolor.o
-    ${CC} ${LFLAGS} -o recolor recolor.o ${LDFLAGS}
+	${CC} ${LFLAGS} -o recolor recolor.o ${LDFLAGS}
 
 #this will clean up all temporary files created by make all
 clean:
-    rm -f core.* *.o *~ ${PROJECT}
+	rm -f core.* *.o *~ ${PROJECT}
