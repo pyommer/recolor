@@ -30,10 +30,10 @@ Purpose:
 	output image clearly visible in detail to a viewer with the
 	selected color deficiency.
 
-    For more detail see the Final Report at the following link:
+    For more detail see the Final Report at the following link, example images
+    are included in the Results Section.
 https://github.com/pyommer/recolor/blob/master/recolor.pdf.
 
-    Example images are included in the Results Section of the Final Report.
 
 Compile:
 
