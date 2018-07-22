@@ -21,7 +21,7 @@ Files:
     Title:   Recoloring Images for Vision Deficient Viewers
     Date:    12/04/2017
 
-Purpose:	
+Purpose:
 
 	Color mapping to a limited palette. The main goal is to allow a
 	user to select a default color vision deficiency (Protanomaly,
@@ -32,11 +32,11 @@ Purpose:
 
 Compile:
 
-
+    make recolor
 
 Usage:
 
-    make recolor ; ./recolor <input.img> [<output.img>] [-OPTIONS]
+    ./recolor <input.img> [<output.img>] [-OPTIONS]
 
 Arguments:
 
