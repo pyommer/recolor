@@ -492,8 +492,8 @@ void displayImage(pixmap_t pixmap)
 // handles displaying an image to the window
 void handleDisplay()
 {
-    glClear(GL_COLOR_BUFFER_BIT);   // clear window to background color
-    displayImage(display.pixmap);    // draw the image
+    glClear(GL_COLOR_BUFFER_BIT); 	// clear window to background color
+    displayImage(display.pixmap);   // draw the image
     glFlush();                      // flush OpenGL pipeline to the viewport
 }
 
@@ -584,7 +584,6 @@ double det(matrix_t matrix)
     // verify matrix size
     if ((int) matrix.size()<2 || (int) matrix[0].size()<2)
     {
-
         printf("matrix determinant error: matrix is less than [2x2]");
         printf(",\t|M| = [%dx%d]\n", (int)matrix.size(), (int)matrix[0].size());
         printMatrix("M", matrix);
