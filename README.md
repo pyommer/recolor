@@ -23,12 +23,12 @@ Files:
 
 Purpose:
 
-	Color mapping to a limited palette. The main goal is to allow a
-	user to select a default color vision deficiency (Protanomaly,
-	Deutanomaly, or Tritanomaly) and have the program filter the colors
-	of an image to the visible colors for the deficiency, creating an
-	output image clearly visible in detail to a viewer with the
-	selected color deficiency.
+    Color mapping to a limited palette. The main goal is to allow a
+    user to select a default color vision deficiency (Protanomaly,
+    Deutanomaly, or Tritanomaly) and have the program filter the colors
+    of an image to the visible colors for the deficiency, creating an
+    output image clearly visible in detail to a viewer with the
+    selected color deficiency.
 
     For more detail see the Final Report at the following link, example images
     are included in the Results Section.

@@ -46,7 +46,7 @@ struct Display
 /*----------------------------FUNCTION-PROTOTYPES-----------------------------*/
 
 // image file i/o functions
-matrix_t read_input();
+matrix_t readInput();
 const pixmap_t readImage(const char *name);
 void writeImage(const char *name, const pixmap_t pixmap);
 void displayImage(const pixmap_t pixmap);
@@ -492,7 +492,7 @@ void displayImage(pixmap_t pixmap)
 // handles displaying an image to the window
 void handleDisplay()
 {
-    glClear(GL_COLOR_BUFFER_BIT); 	// clear window to background color
+    glClear(GL_COLOR_BUFFER_BIT);   // clear window to background color
     displayImage(display.pixmap);   // draw the image
     glFlush();                      // flush OpenGL pipeline to the viewport
 }
@@ -526,6 +526,7 @@ matrix_t cross(matrix_t a, vector_t b)
 {
     return cross(a, transpose(b));
 }
+
 // returns the cross product matrix: AxB, ([3x3]x[3x3] = [3x3])
 matrix_t cross(matrix_t a, matrix_t b)
 {
@@ -560,6 +561,7 @@ matrix_t transpose(matrix_t matrix)
             result[i][j] = matrix[j][i];
     return result;
 }
+
 // returns the transpose of the vector, [1xn] -> [nx1]
 matrix_t transpose(vector_t matrix)
 {
@@ -724,6 +726,7 @@ matrix_t add(matrix_t a, matrix_t b)
             result[i][j] += b[i][j];
     return result;
 }
+
 // returns the sum matrix matrix+value
 matrix_t add(double value, matrix_t matrix)
 {
@@ -770,6 +773,7 @@ matrix_t zero(int n)
 {
     return zero(n,n);
 }
+
 // returns an [mxn] matrix of elements set to zero
 matrix_t zero(int m, int n)
 {
@@ -789,11 +793,13 @@ matrix_t set(matrix_t matrix)
             result[i][j] = matrix[i][j];
     return result;
 }
+
 // returns a matrix set to the values of the elements in the matrix (vector)
 matrix_t set(vector_t matrix)
 {
     return set(transpose(matrix));
 }
+
 // returns a matrix (vector) set to the values, result = {x,y,0}
 matrix_t set(double x, double y, double z)
 {
@@ -803,16 +809,19 @@ matrix_t set(double x, double y, double z)
     result[2][0] = z;
     return result;
 }
+
 // returns a matrix (vector) set to the values, result = {x,y,0}
 matrix_t set(double x, double y)
 {
     return set(x, y, 0.0);
 }
+
 // returns a matrix (vector) set to the values, result = {x,y,z}
 matrix_t set(int x, int y, int z)
 {
     return set(x/1.0, y/1.0, z/1.0);
 }
+
 // returns a matrix (vector) set to the values, result = {x,y,0}
 matrix_t set(int x, int y)
 {
@@ -828,6 +837,7 @@ void destroy(pixmap_t pixmap)
         destroy(pixmap[i]);
     pixmap.clear();
 }
+
 // clears the data in the matrix
 void destroy(matrix_t matrix)
 {
@@ -835,6 +845,7 @@ void destroy(matrix_t matrix)
         destroy(matrix[i]);
     matrix.clear();
 }
+
 // clears the data in the vector matrix
 void destroy(vector_t vector)
 {
@@ -848,11 +859,13 @@ double normalize(double max, double min, double value)
 {
     return (value-min)/(max-min);
 }
+
 // returns the normalized value in the matrix
 double normalize(double value, matrix_t matrix)
 {
     return normalize(getMax(matrix),getMin(matrix),value);
 }
+
 // returns the normalized matrix
 matrix_t normalize(matrix_t matrix)
 {
@@ -872,6 +885,7 @@ double getMax(pixmap_t pixmap)
             result = getMax(pixmap[i]);
     return result;
 }
+
 // returns the minimum value in the pixmap
 double getMin(pixmap_t pixmap)
 {
@@ -881,6 +895,7 @@ double getMin(pixmap_t pixmap)
             result = getMin(pixmap[i]);
     return result;
 }
+
 // returns the maximum value in the matrix
 double getMax(matrix_t matrix)
 {
@@ -890,6 +905,7 @@ double getMax(matrix_t matrix)
             result = getMax(matrix[i]);
     return result;
 }
+
 // returns the minimum value in the matrix
 double getMin(matrix_t matrix)
 {
@@ -899,6 +915,7 @@ double getMin(matrix_t matrix)
             result = getMin(matrix[i]);
     return result;
 }
+
 // returns the maximum value in the matrix (vector)
 double getMax(vector_t matrix)
 {
@@ -908,6 +925,7 @@ double getMax(vector_t matrix)
             result = matrix[i];
     return result;
 }
+
 // returns the minimum value in the matrix (vector)
 double getMin(vector_t matrix)
 {
@@ -923,6 +941,7 @@ double getMax(double a, double b)
 {
     return (a>b) ? a : b;
 }
+
 // returns the minimum of the two values
 double getMin(double a, double b)
 {
@@ -937,12 +956,14 @@ void printMatrix(const char *name, matrix_t matrix)
     printf("%s = ", name);
     printMatrix(matrix);
 }
+
 // prints the vector matrix, with a specified name
 void printMatrix(const char *name, vector_t matrix)
 {
     printf("%s = ", name);
     printMatrix(matrix);
 }
+
 // prints the matrix
 void printMatrix(matrix_t matrix)
 {
@@ -950,6 +971,7 @@ void printMatrix(matrix_t matrix)
         printMatrix(matrix[i]);
     printf("\n");
 }
+
 // prints the vector matrix
 void printMatrix(vector_t matrix)
 {
